@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="notification" style="display: none;">
+        <div class="notification-container">
+            <div class="notification-header">
+                <label></label>
+            </div>
+            <div class="notification-body">
+                <label></label>
+            </div>
+            <div class="notification-footer"></div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Rock, Paper, Scissors</h1>
+            <input type="number" id="intentos" placeholder="Ingresa los intentos">
+            <strong><span id="intentos-restantes">Intentos restantes: 0</span></strong>
+            <div id="mensaje" class="mensaje"></div> <!-- Contenedor de mensajes -->
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="options-container">
+                <section class="optionCont">
+                    <button class="option" id="rock">
+                        <img class="option-image" src="rock-emoji.png" alt="Rock">
+                    </button>
+                </section>
+                <section class="optionCont">
+                    <button class="option" id="paper">
+                        <img class="option-image" src="paper-emoji.png" alt="Paper">
+                    </button>
+                </section>
+                <section class="optionCont">
+                    <button class="option" id="scissors">
+                        <img class="option-image" src="scissors-emoji.png" alt="Scissors">
+                    </button>
+                </section>
+            </div>
+            <footer>
+              <div class="points-container">
+                  <strong><span id="player1-points">Player 1 Points: 0</span></strong>
+                  <strong><span id="player2-points">Player 2 Points: 0</span></strong>
+              </div>
+              <button class="button-mode">Change to player</button>
+            </footer>
+            <div>
+              <button class="button-mode"><a class="a-button" href="./index.html">Reiniciar</a></button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
